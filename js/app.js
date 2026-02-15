@@ -11,7 +11,12 @@ const upgrade=()=>new Promise((res,rej)=>{
 		window.chcp.isUpdateAvailableForInstallation((e,o)=>{
 			const install=(res,rej)=>window.chcp.installUpdate(e=>{
 				if(e)return rej()
-				setTimeout(()=>location.reload(true),500)
+				alert('更新成功！')
+				setTimeout(()=>{
+					const u=new URL(location.href)
+					u.searchParams.set('_',Date.now())
+					location.href=u.toString()
+				},500)
 				res()
 			})
 			if(!e)return confirm('新版本更新已下载，是否立即安装并重启应用？')?install(res,rej):rej()
