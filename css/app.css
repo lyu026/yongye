@@ -6,13 +6,14 @@ html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:10
 body{
 	font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
 	font-size:12px;line-height:1.2;color:#111;background-color:#354;overflow-x:hidden;
-	width:100%;padding:0 5px;margin:0 auto;
+	width:100%;padding:constant(safe-area-inset-top) 5px 0 5px;margin:0 auto;
 }
 .hide{display:none!important}
 
 .page{
+	min-height:100%;width:100%;
 	display:flex;flex-direction:column;
-	min-height:100%;padding:5px;overflow-y:auto;overflow-x:hidden;
+	padding:5px;overflow-y:auto;overflow-x:hidden;
 }
 
 .card{
