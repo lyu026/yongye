@@ -1,7 +1,7 @@
-import {$,attr,css} from './global'
+import {$,attr,css} from './global.js'
 
 
-const HCP_URL='https://raw.githubusercontent.com/lyu026/yongye/refs/heads/main/hcp.json'
+const HCP_URL='https://lyu026.github.io/yongye/chcp.json'
 
 function cv(){
 	return new Promise((resolve,reject)=>{
@@ -138,6 +138,7 @@ async function mu(){
 
 
 document.addEventListener('deviceready',()=>{
+	alert("hhhhh")
 	cv().catch(e=>{
 		alert("err:"+e.message)
 	});
