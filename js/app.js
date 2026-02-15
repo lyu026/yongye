@@ -13,9 +13,9 @@ const upgrade=()=>new Promise((res,rej)=>{
 				if(e)return rej()
 				alert('更新成功！')
 				setTimeout(()=>{
-					const u=new URL(location.href)
+					const u=new URL(window.location.href)
 					u.searchParams.set('_',Date.now())
-					location.href=u.toString()
+					window.location.href=u.toString()
 				},500)
 				res()
 			})
