@@ -39,7 +39,7 @@ function cu(){
 	return new Promise((resolve,reject)=>{
 		window.chcp.isUpdateAvailableForInstallation((e,data)=>{
 			if(e){
-				alert("cu.false")
+				alert("cu.false  "+e.message)
 				resolve(false);
 			}else{
 				alert("cu.yed")
