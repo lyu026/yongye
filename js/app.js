@@ -14,7 +14,7 @@ const upgrade=()=>new Promise((res,rej)=>{
 				setTimeout(()=>{
 					const u=new URL(window.location.href)
 					u.searchParams.set('_',Date.now())
-					window.location.href=u.toString()
+					window.location.replace(u.toString())
 				},500)
 				res()
 			})
