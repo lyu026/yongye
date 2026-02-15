@@ -1,4 +1,3 @@
-import {$,attr,css} from './global.js'
 
 const upgrade=()=>new Promise((res,rej)=>{
 	window.chcp.getVersionInfo(async(e,o)=>{
