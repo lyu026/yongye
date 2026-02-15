@@ -10,10 +10,14 @@ body{
 }
 .hide{display:none!important}
 
-.page{display:none;padding:5px;overflow-y:auto;overflow-x:hidden}
+.page{
+	display:flex;flex-direction:column;
+	min-height:100%;padding:5px;overflow-y:auto;overflow-x:hidden;
+}
 
 .card{
-	padding:5px;margin-bottom:10px;
+	min-height:10vw;
+	padding:5px;margin-top:5px;
 	background:#fff;border-radius:5px;
 	box-shadow:0 2px 12px rgba(0,0,0,.08);
 	transition:transform 0.2s,box-shadow 0.2s;

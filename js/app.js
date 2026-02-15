@@ -122,6 +122,7 @@ async function mu(){
 			alert('✅ 已是最新版本');
 			return;
 		}
+		await du()
 		//步骤4：版本不同，检查是否有已下载的更新等待安装
 		const hasAvailable=await cu();
 		if(hasAvailable){
@@ -131,7 +132,6 @@ async function mu(){
 			}
 			return;
 		}
-		await du()
 	}catch(e){
 		alert('检查更新失败:'+e.message);
 	}
