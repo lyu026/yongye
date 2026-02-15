@@ -138,7 +138,10 @@ async function mu(){
 
 
 document.addEventListener('deviceready',()=>{
-	alert("hhhhh")
+	alert("hhhhh  "+(window.chcp?"111":"000"))
+	
+	
+	
 	cv().catch(e=>{
 		alert("err:"+e.message)
 	});
