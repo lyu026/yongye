@@ -1,0 +1,7 @@
+{
+	"name":"yongye",
+	"update":"start",
+  "release": "2026.02.20-15.30.00",
+	"android_identifier":"com.yongye.app",
+	"content_url":"https://raw.githubusercontent.com/lyu026/yongye/main/"
+}
