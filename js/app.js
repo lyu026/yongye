@@ -131,6 +131,7 @@ async function mu(){
 			}
 			return;
 		}
+		await du()
 	}catch(e){
 		alert('检查更新失败:'+e.message);
 	}
